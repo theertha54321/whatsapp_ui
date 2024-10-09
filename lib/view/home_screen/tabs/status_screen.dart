@@ -6,6 +6,12 @@ class StatusScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+        backgroundColor: Colors.green.shade900,
+        onPressed: (){},
+        child: Icon(Icons.chat,color: Colors.white,),
+        ),
       body: Expanded(
         child: Padding(
           padding: const EdgeInsets.all(8.0),

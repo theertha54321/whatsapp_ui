@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui/view/home_screen/tabs/call_screen.dart';
 import 'package:whatsapp_ui/view/home_screen/tabs/chat_screen.dart';
 import 'package:whatsapp_ui/view/home_screen/tabs/status_screen.dart';
 
@@ -19,7 +20,11 @@ class HomeScreen extends StatelessWidget {
            
            IconButton(onPressed: (){}, icon: Icon(Icons.search,color: Colors.white,)),
           
-            IconButton(onPressed: (){}, icon: Icon(Icons.more_vert,color: Colors.white,)),
+            // 
+            // PopupMenuButton(itemBuilder:
+             
+            
+            // )
           ],
           bottom: TabBar(
             indicatorColor: Colors.white,
@@ -51,6 +56,7 @@ class HomeScreen extends StatelessWidget {
           Text("Cam"),
           ChatScreen(),
           StatusScreen(),
+          CallScreen()
         ]),
       ),
     );
